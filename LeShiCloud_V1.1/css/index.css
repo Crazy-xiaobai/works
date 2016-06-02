@@ -1,0 +1,357 @@
+
+.yunpan_icon{
+    background:url(../img/yunpan_icon.png) no-repeat;
+}
+.login_icon{
+    background:url(../img/login_icon.png) no-repeat;
+}
+.login_more_icon{
+    background:url(../img/login_more_icon.png) no-repeat;
+}
+.tip_icon{
+	background:url(../img/tip_icon.png) no-repeat;
+}
+
+.global{
+	width:100%;
+	height:100%;
+	background:url(../img/globalbg.jpg) no-repeat center center;
+	background-size:cover;
+	overflow:hidden;
+    position: relative;
+}
+.title{
+	width:240px;
+	height:70px;
+	overflow:hidden;
+	margin: 100px auto 0;
+	background-position: 0 -794px;
+}
+.iconList{
+	width:975px;
+	height:220px;
+    text-align:center;
+	margin: 70px auto 0;
+}
+.iconList span{
+	display:block;
+}
+.iconList li{
+    width: 168px;
+    float: left;
+	text-align: center;
+    margin-left: 27px;
+    position: relative;
+}
+.iconList li .text{
+	width: 168px;
+    height: 28px;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 8px;
+    float: left;
+}
+.pic{
+    width: 168px;
+    height: 168px;
+    margin: 0px auto;
+    -webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	-o-transform: scale(0.75);
+	transform: scale(0.75);
+
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+.cloud .bg1{
+    width: 168px;
+    height: 168px;
+    border-radius: 100%;
+    background-color: #fff;
+    position: relative;
+}
+.cloud .bg1 .cloudBg{
+   	width: 116px;
+    height: 82px;
+    background-position: -150px -1140px;
+    position: absolute;
+    top: 36px;
+    left: 26px;
+}
+.contacts .bg2{
+    width: 168px;
+    height: 168px;
+    background-position: -24px -939px;
+    position: relative;
+}
+.contacts .bg2 .contactsIcon{
+   	background-position: -296px -1108px;
+    width: 40px;
+    height: 40px;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: translate3d(60px,-60px,0);
+    -moz-transform: translate3d(60px,-60px,0);
+    -o-transform: translate3d(60px,-60px,0);
+    -transform: translate3d(60px,-60px,0);
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+.photo .bg3{
+    width: 168px;
+    height: 168px;
+    background-position: -822px -1155px;
+}
+.notes .bg4{
+    width: 168px;
+    height: 168px;
+    background-position: -814px -942px;
+    position: relative;
+}
+.notes .bg4 .pen{
+	width: 56px;
+    height: 56px;
+    background-position: -24px -1165px;
+    position: absolute;
+    display: none;
+    top: 53px;
+    -webkit-transform: translate3d(-65px,-5px,0);
+    -moz-transform: translate3d(-65px,-5px,0);
+    -o-transform: translate3d(-65px,-5px,0);
+    transform: translate3d(-65px,-5px,0);
+}
+.find{
+    background-position: -238px -939px;
+    position: relative;
+}
+.find .bg5{
+	width: 168px;
+    height: 168px;
+    background-position: -440px -941px;
+}
+.find .dot{
+	width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #d2eb8e;
+    opacity: 0.8;
+    position: absolute;
+    top: 43px;
+    left: 43px;
+}
+.find .circle{
+	width: 32px;
+    height: 32px;
+    background: #d2eb8e;
+    opacity: 0.6;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+}
+
+/* --------云盘登陆弹框-------- */
+#mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index:999;
+    display:none;
+}
+#loginBox{
+    width: 700px;
+    height: auto;
+    border: 1px solid #000;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left:-350px;
+    margin-top:-156px;
+    z-index: 1000;
+    background: #fff;
+    border:1px solid #c9c9c9;
+    display:none;
+}
+#loginBox .loginLeft{
+    float: left;
+    width: 312px;
+    padding: 30px 18px 12px 40px;
+}
+.loginLeftTitle,.loginRightTitle{
+    width:100%;
+    height:30px;
+    line-height:30px;
+    font-size:16px;
+    color:#444;
+    text-align:left;
+    margin-bottom:20px;
+}
+.QQLogin a{
+    display: block;
+    height: 45px;
+    margin-bottom: 10px;
+    background-position:0 -170px;
+}
+.weiboLogin a{
+    display: block;
+    height: 45px;
+    margin-bottom: 10px;
+    background-position:0 -270px;
+}
+.loginMore{
+    margin-top: 10px;
+    height:55px;
+}
+.loginMore span{
+    float:left;
+    margin-right:20px;
+    font-size: 14px;
+    color: #969696;
+    vertical-align:top;
+}
+.loginMore a{
+    float:left;
+    margin-right:5px;
+    height: 16px;
+    width: 20px;
+    vertical-align:top;
+}
+.loginMore a:nth-of-type(1){
+    background-position:0 -122px;
+}
+.loginMore a:nth-of-type(2){
+    background-position:0 -196px;
+}
+.loginMore a:nth-of-type(3){
+    background-position:0 -20px;
+}
+.loginMore a:nth-of-type(4){
+    background-position:0 -40px;
+}
+.loginMore a:nth-of-type(5){
+    background-position:0 -80px;
+}
+.loginMore a:nth-of-type(6){
+    background-position:0 -100px;
+}
+#loginBox .loginRight{
+    float: right;
+    width: 270px;
+    margin: 30px 40px 12px 0;
+    padding-left: 18px;
+    border-left: 1px #e9e9e9 solid;
+}
+.loginText,.loginPassword{
+    width:100%;
+    height:43px;
+    border: 1px solid #ccc;
+    margin-bottom:10px;
+    text-indent:20px;
+    color: #000;
+    font-size: 16px;
+}
+.loginBtn{
+    width:100%;
+    height:54px;
+}
+.loginBtnLeft{
+    float:left;
+    padding:10px 0;
+}
+.loginBtnLeft input{
+    -webkit-appearance: checkbox;
+}
+.checkbox {
+     vertical-align: middle;
+}
+.loginBtnLeft a{
+    color: #969696;
+    vertical-align: middle;
+}
+.loginBtn .loginSent{
+    float:right;
+    width:126px;
+    height:43px;
+    border:1px solid #d1d1d1;
+    text-align:center;
+    line-height:43px;
+    font-size:16px;
+    color:#7e7e7e;
+}
+.loginBtn .loginSent:hover{
+    color:#4193D7;
+}
+.loginBottom{
+    clear:both;
+    height: 20px;
+    border-top: 1px solid #c9c9c9;
+    padding: 20px 38px;
+    font-size: 14px;
+    text-align:left;
+}
+.loginBottom a{
+    color:#529bef;
+}
+.loginTip{
+    width-: 160px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 10px 10px 10px 32px;
+    border: 1px solid #bbb;
+    background: #fff;
+    font-size: 14px;
+    color:red;
+    position: absolute;
+}
+.loginTip span:nth-of-type(1){
+    width: 10px;
+    height: 18px;
+    position:absolute;
+    top: 12px;
+    left: -9px;
+    background-position: -120px -140px;
+}
+.loginTip span:nth-of-type(2){
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -10px;
+    background-position: -30px 0;
+}
+.Tip1{
+    display:none;
+    top: 82px;
+    right: -178px;
+}
+.Tip2{
+    display:none;
+    top: 138px;
+    right: -273px;
+}
+.close{
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background-position: 0 0;
+    cursor:pointer;
+}

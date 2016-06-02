@@ -1,0 +1,490 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* --CSS样式重置---------------------------------------------------------------------------- */
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,p,form,button,input,textarea,th,td{ margin:0; padding:0; font-family:Arial,Tahoma,"宋体"; font-size:12px;}
+a{ text-decoration:none;}
+a:hover{ text-decoration:underline;}
+li{ list-style:none;}
+img{ border:none; vertical-align:top;}
+strong{ font-weight:normal;}
+.clearFix{ zoom:1;}
+.clearFix:after{ content:""; display:block; clear:both;}
+/* --CSS样式重置---------------------------------------------------------------------------- */
+
+/* --页面头部---------------------------------------------------------------------------- */
+.header{ width:100%; height:102px; padding-top:10px; background:#f7f8f6;}
+.wrap{ width:960px; margin:0 auto;}
+.headerPic{ background:url(../img/headerSprite.png) no-repeat;}
+
+.logo{ float:left; width:171px; height:54px;}
+.logo a{ float:left; width:171px; height:0; padding-top:54px; overflow:hidden;}
+
+.userPort{ float:right; margin-top:10px;}
+.userPort .port{ float:left; height:20px; line-height:20px;}
+.userPort a{ font-family: Tahoma; color:#666;}
+.userPort .loginReg a{ margin:0 10px;}
+.userPort .ico{ width:70px; padding-left:7px; position:relative;}
+
+.userPort .ico .line{  width:1px; height:12px; overflow:hidden; position:absolute; left:0; top:4px; background-position:-172px 0; }
+.userPort .ico .triangle{ width:8px; height:4px; overflow:hidden; position:absolute; left:60px; top:8px; background-position:-174px 0;}
+
+#perCenter .perCenterBox{ width:91px; position:absolute; right:0; top:0; display:none;}
+#perCenter .title{ float:right; width:76px; height:21px; border:1px solid #e1e1e1; border-bottom:1px solid #fff; line-height:21px; text-indent:8px; background:#fff; margin-bottom:-1px; position:relative; z-index:2}
+#perCenter .titleIco{ width:8px; height:4px; overflow:hidden; position:absolute; left:60px; top:8px; background-position:-183px 0;}
+#perCenter .perCenterSubBox{ float:right; width:89px; padding:6px 0 4px; border:1px solid #e1e1e1;background:#fff; position:relative; z-index:1}
+#perCenter .perCenterSubBox li{ height:25px; line-height:25px; text-indent:11px;}
+
+#fetionIndex .fetionIndexBox{ width:160px; position:absolute; right:0; top:0; display:none;}
+#fetionIndex .title{ float:right; width:76px; height:21px; border:1px solid #e1e1e1; border-bottom:1px solid #fff; line-height:21px; text-indent:8px; background:#fff; margin-bottom:-1px; position:relative; z-index:2}
+#fetionIndex .titleIco{ width:8px; height:4px; overflow:hidden; position:absolute; left:60px; top:8px; background-position:-183px 0;}
+#fetionIndex .fetionIndexSubBox{ float:right; width:140px; padding:6px 13px 4px 5px; border:1px solid #e1e1e1;background:#fff; position:relative; z-index:1}
+#fetionIndex .fetionIndexSubBox dl{ float:left; width:70px;}
+#fetionIndex .fetionIndexSubBox dt{ width:70px; height:24px; line-height:24px; text-indent:10px; font-family: Tahoma; font-weight:bold; color:#666;}
+#fetionIndex .fetionIndexSubBox dd{ width:70px; height:18px; line-height:18px; text-indent:10px;}
+
+.mainMenuBg{ height:38px; margin-top:10px; background-position:0 -55px; background-repeat:repeat-x;}
+.mainMenuL{ float:left; margin:5px 0 0 10px; display:inline;}
+.mainMenuL li{ float:left;}
+.mainMenuL li a{ display:inline-block; height:32px; width:90px; line-height:32px; text-align:center; font-size:14px; font-weight:bold; color:#fff; padding:0 1px;}
+.mainMenuL li a:hover{ border-top:1px solid #f3f1f1; border-left:1px solid #dee0e6; border-right:1px solid #dee0e6; background:#ebeaea; color:#333; border-radius:3px 3px 0 0; padding:0;}
+.mainMenuL li a.active{ border-top:1px solid #f3f1f1; border-left:1px solid #dee0e6; border-right:1px solid #dee0e6; background:#ebeaea; color:#333; border-radius:3px 3px 0 0; padding:0;}
+.mainMenuR{ float:right; line-height:38px; color:#fff;}
+.mainMenuR a{ margin:0 6px 0 8px; color:#fff; text-decoration:underline;}
+.mainMenuR a:hover{ text-decoration:none;}
+/* --页面头部---------------------------------------------------------------------------- */
+/* --页面底部---------------------------------------------------------------------------- */
+.footer{ height:83px; border-top:1px solid #ccc; margin-top:20px;}
+.footerWrap{ width:960px; margin:0 auto; padding:20px 0; text-align:center;}
+.footerWrap a:hover{ text-decoration:underline;}
+.footerLink{ height:18px; line-height:18px; padding-bottom:7px; overflow:hidden; }
+.footerLink a{ padding:0 10px 0 9px; font-weight:bold; letter-spacing:1px; color:#666; }
+.footerICP{ height:18px; color:#333; overflow:hidden; }
+.footerICP a{ padding:0 24px 0 9px; color:#666; }
+.footerICP .footerIco{ display:inline-block; width:15px; height:18px; background-position:-176px -16px; vertical-align:middle; overflow:hidden; }
+/* --页面底部---------------------------------------------------------------------------- */
+
+/******会员首页页面****************************************************************************/
+
+/* --VIPPage上部内容---------------------------------------------------------------------------- */
+.pt20{ padding-top:20px;}
+.mt20{ margin-top:20px;}
+.titlePic{ background:url(../img/vipTitle.png) no-repeat;}
+.vipTopL{ float:left; width:244px; height:279px; border:2px solid #cd1a09; border-top-width:5px; background:#fcfcfc;}
+.loginBar{ height:141px; padding:25px 18px 3px; border-bottom:1px solid #fff; background:#f7f7f7;}
+.loginBar .loginBtn{ width:124px; height:37px; margin:0 42px; border:none; background-position: 0 -122px;}
+.loginBar p{ width:208px; height:60px; padding:16px 0 8px; line-height:20px; font-size:14px; font-weight:bold; letter-spacing:1px;}
+.loginBar a{ display:block; text-align:right; color:#027fd1;}
+.vipBar{ width:184px; height:67px; padding:20px 30px 22px; border-top:1px solid #ebebeb;}
+.vipBar .vipBtn{ width:184px; height:43px; border:none; background-position: 0 -164px;}
+.vipBar p{ text-align:center; color:#000; padding-top:12px;}
+.vipBar span{ color:#cd1a09;}
+.vipBar .messageColor{ color:#027fd1; font-weight:bold; padding-left:4px;}
+.vipTopR{ float:right; width:702px; height:286px; position:relative;}
+.vipTopR img{ width:702px; height:286px;}
+.vipBanner{ height:24px; position:absolute; left:0; bottom:0;}
+.vipBanner a{ float:left; width:136px; height:12px; line-height:12px; border:1px solid #ebad7f; padding:6px 0 4px; text-align:center; background:#f2c1c7; margin-right:3px; font-weight:bold; color:#734147;}
+/* --VIPPage上部内容---------------------------------------------------------------------------- */
+
+/* --VIPPage下部内容---------------------------------------------------------------------------- */
+
+/* --特权List---------------------------------------------------------------------------- */
+
+/* --飞信特权---------------------------------------------------------------------------- */
+.vipBottom{}
+.vipBottomL{ float:left; width:709px;}
+.vipBottomL .privilege{ width:709px; height:208px;}
+.V_title .titleImg{ float:left;}
+.V_title .more{ float:right; color:#027fd1;}
+.V_title .titleImg a{ display:inline-block; width:98px; height:0px; overflow:hidden; padding-top:25px;}
+.V_title .title1{ background-position: 0 0;}
+.V_title .title2{ background-position: 0 -30px;}
+.V_title .title3{ background-position: 0 -60px;}
+.V_title .title4{ background-position: 0 -90px;}
+
+.privilege ul{ height:173px; margin-top:10px; background:url(../img/privilegeBg.png) no-repeat;}
+.privilege li{ float:left; width:177px;}
+.privilege .text1{ display:block; height:26px; line-height:26px; font-size:14px; font-weight:bold; letter-spacing:1px; text-indent:12px; color:#333;}
+.privilege .text2{ display:block; height:14px; line-height:14px; font-size:12px; text-indent:12px; color:#666;}
+.privilege a:hover{ text-decoration:none;}
+.vipFeixin a{ float:left; width:176px; height:173px; margin-left:1px; background:url(../img/vipFeixinSprite.png) no-repeat;}
+.vipFeixin .vipFeixinBg1{ background-position: 0 0;}
+.vipFeixin .vipFeixinBg1:hover{ background-position: 0 -176px;}
+.vipFeixin .vipFeixinBg2{ background-position: -180px 0;}
+.vipFeixin .vipFeixinBg2:hover{ background-position:-180px -176px;}
+.vipFeixin .vipFeixinBg3{ background-position: -360px 0;}
+.vipFeixin .vipFeixinBg3:hover{ background-position:-360px -176px;}
+.vipFeixin .vipFeixinBg4{ background-position: -540px 0;}
+.vipFeixin .vipFeixinBg4:hover{ background-position:-540px -176px;}
+/* --飞信特权---------------------------------------------------------------------------- */
+
+/* --靓号特权---------------------------------------------------------------------------- */
+.vipNumber dt{ height:27px; line-height:27px; font-size:14px; font-weight:bold; letter-spacing:1px; text-indent:12px; color:#000;}
+.vipNumber dd a{ display:block;height:44px; line-height:44px; margin:0 1px; font-size:20px; font-family:Tahoma; color:#333; text-indent:50px;}
+.vipNumber dd a span{ color:#fb7c00;}
+.vipNumber .ico{ background:#fafafa url(../img/vipNumberSprite.png) no-repeat;}
+.vipNumber .cart .ico{ background-position: 10px 0;}
+.vipNumber .cake .ico{ background-position: 10px -79px;}
+.vipNumber .year .ico{ background-position: 10px -157px;}
+.vipNumber .overlap .ico{ background-position: 10px -235px;}
+.vipNumber dd a:hover{background:#fcb419; color:#fff;}
+.vipNumber dd a:hover span{background:#fcb419; color:#fff;}
+.vipNumber .ico1:hover{ background:#fcb419 url(../img/vipNumberSprite.png) no-repeat 10px -39px;}
+.vipNumber .ico2:hover{ background:#fcb419 url(../img/vipNumberSprite.png) no-repeat 10px -117px;}
+.vipNumber .ico3:hover{ background:#fcb419 url(../img/vipNumberSprite.png) no-repeat 10px -195px;}
+.vipNumber .ico4:hover{ background:#fcb419 url(../img/vipNumberSprite.png) no-repeat 10px -273px;}
+/* --靓号特权---------------------------------------------------------------------------- */
+
+/* --专享特权---------------------------------------------------------------------------- */
+.privilege .vipSpecial li{ float:left; height:165px;}
+.privilege .vipSpecial a{ float:left; width:176px; margin-left:1px;}
+.privilege .vipSpecial img{ width:176px; height:109px; margin:12px 0 4px;}
+.privilege .vipSpecial a:hover{ border-bottom:8px solid #cd1a09;}
+/* --专享特权---------------------------------------------------------------------------- */
+
+/* --生活特权---------------------------------------------------------------------------- */
+.privilege .vipLife li{ float:left; height:165px;}
+.privilege .vipLife a{ float:left; width:176px; margin-left:1px;}
+.privilege .vipLife img{ width:154px; height:80px; margin:29px 10px 14px; border:1px solid #e7e7e7;}
+.privilege .vipLife a:hover{ border-bottom:8px solid #cd1a09;}
+/* --生活特权---------------------------------------------------------------------------- */
+
+/* --特权List---------------------------------------------------------------------------- */
+
+/* --飞信VIPList---------------------------------------------------------------------------- */
+
+/* --飞信会员Public---------------------------------------------------------------------------- */
+.vipBottomR{ float:right; width:230px; height:892px; background:url(../img/sideBg.png) repeat-y;}
+.crown{ width:210px; height:30px; line-height:30px; padding:8px 10px; }
+.crown h3{ float:left; font-weight:bold; color:#333px; font-size:14px; text-indent:30px; background:url(../img/sideIcoSprite.png) no-repeat 0 -364px;}
+.focus{ float:right; width:80px; height:22px; line-height:22px; margin-top:3px; border:1px solid #9feaf6; background:#dffbff; color:#076cd2; text-align:center;}
+.focus input{ width:80px; height:22px; border:none; background:none; color:#076cd2;}
+/* --飞信会员Public---------------------------------------------------------------------------- */
+
+/* --会员特权---------------------------------------------------------------------------- */
+.same{ margin-bottom:10px;}
+.sideTitle{ height:33px; line-height:33px; background-position:0 -212px;}
+.sideTitle .titleText{ float:left; font-size:14px; text-indent:12px; font-weight:bold; color:#cd1a09;}
+.sideTitle .all{ float:right; color:#027fd1; margin-right:12px;}
+.sideTitle .all:hover{ text-decoration:underline;}
+
+.vipList{ padding:4px 0 0 2px}
+.vipList li{ float:left; width:104px; height:34px; line-height:34px; margin-left:10px; position:relative; display:inline;}
+.vipList li a{ padding-left:22px; color:#333;}
+.vipList li span{ display:inline-block; width:17px; height:18px; background:url(../img/sideIcoSprite.png) no-repeat; position:absolute; left:0px; top:8px;}
+.vipList .new{ display:inline-block; width:24px; height:14px; background-position:0 -233px; position:absolute; left:68px; top:0px;}
+.vipList .vipListico1{ background-position: 0 0;}
+.vipList .vipListico2{ background-position: 0 -22px;}
+.vipList .vipListico3{ background-position: 0 -44px;}
+.vipList .vipListico4{ background-position: 0 -66px;}
+.vipList .vipListico5{ background-position: 0 -88px;}
+.vipList .vipListico6{ background-position: 0 -110px;}
+.vipList .vipListico7{ background-position: 0 -132px;}
+.vipList .vipListico8{ background-position: 0 -154px;}
+.vipList .vipListico9{ background-position: 0 -176px;}
+.vipList .vipListico10{ background-position: 0 -198px;}
+/* --会员特权---------------------------------------------------------------------------- */
+
+/* --最新动态---------------------------------------------------------------------------- */
+.newList{ padding:4px 10px 0 13px}
+.newList li{ height:24px; line-height:24px; padding-left:9px; position:relative;}
+.newList a{ float:left; color:#333;}
+.newList .date{ float:right; text-align:right; color:#cdcdcd;}
+.newList .newListIco{ display:inline-block; width:6px; height:6px; background:url(../img/sideIcoSprite.png) no-repeat 0 -254px; position:absolute; left:0px; top:9px; overflow:hidden;}
+/* --最新动态---------------------------------------------------------------------------- */
+
+/* --热门装扮---------------------------------------------------------------------------- */
+.hotTilte{ width:210px; height:26px; background:#eee; margin-left:11px; position:relative; top:-2px;}
+.hotTilte a{ float: left; width:69px; height:26px; line-height:26px; font-size:14px; text-align:center; color:#333;border-right:1px solid #dfdfdf;}
+.hotTilte .expression{ border:none;}
+.hotTilte a.active{ background:#cd1a09; color:#fff;}
+.imgList{ padding-top:15px;}
+.imgList li{ float:left; width:58px; margin:0 0 6px 16px; display:inline;}
+.imgList li img{ width:56px; height:56px; border:1px solid #f2f2f2;}
+.imgList li span{ display:block; width:58px; line-height:22px; color:#333; text-align:center;}
+/* --热门装扮---------------------------------------------------------------------------- */
+
+/* --联系我们---------------------------------------------------------------------------- */
+.contact{ padding:10px 0 11px 10px;}
+.contact li{ height:26px; line-height:26px; padding-left:28px; color:#000; position:relative;}
+.contact li span{ display:block; width:19px; height:21px; background:url(../img/sideIcoSprite.png) no-repeat; position:absolute; left:0; top:3px;}
+.contact .contactIco1{ background-position:0 -271px;}
+.contact .contactIco2{ background-position:0 -299px;}
+.contact .contactIco3{ background-position:0 -330px;}
+.contact .mail a{color:#333;}
+.contact .FAQ a{color:#027fd1;}
+/* --联系我们---------------------------------------------------------------------------- *
+/
+/* --飞信VIPList---------------------------------------------------------------------------- */
+
+/* --VIPPage下部内容---------------------------------------------------------------------------- */
+
+/******会员首页页面****************************************************************************/
+
+
+/******飞信特权页面****************************************************************************/
+
+/* --浮标---------------------------------------------------------------------------- */
+.fetionL{ float:left; width:175px;}
+.fetionL .fetionList{ width:175px; border-bottom:1px solid #dcdcdc; }
+.fetionList li{ height:60px; border-top:1px solid #dcdcdc; position:relative; vertical-align:top;}
+.fetionList li a{ display:block; font:18px/60px "微软雅黑"; color:#999; text-indent:65px; text-decoration:none;}
+.fetionList li a.active{ background:#f3f3f3;}
+.fetionList li a:hover{ background:#f3f3f3; text-decoration:none;}
+.fetionList li span{ width:32px; height:32px; background:url(../img/fetionPage.gif) no-repeat; position:absolute; left:27px; top:13px;}
+.fetionList .ico1{ background-position:0 -175px;}
+.fetionList .ico2{ background-position:-33px -175px;}
+.fetionList .ico3{ background-position:0 -175px;}
+.fetionList .ico4{ background-position:-66px -175px;}
+.fetionList .ico5{ background-position:-99px -175px;}
+/* --浮标---------------------------------------------------------------------------- */
+
+/* --飞信特权内容---------------------------------------------------------------------------- */
+.fetionContent{ float:right; width:754px;}
+.fetionPageBg{ background:url(../img/fetionPage.gif) no-repeat; }
+.fetionTitle{ height:28px; font:24px/28px "微软雅黑"; color:#000; font-weight:normal; text-indent:10px; border-left:2px solid #d53920;}
+.describe{ height:33px; line-height:33px; color:#999; position:relative;}
+.describe a{ display:inline-block; width:102px; height:27px; position:absolute; right:0; top:0; background-position: 0 -103px;}
+
+.fetionImgList{ border-left:1px solid #dcdcdc; border-top:1px solid #dcdcdc;}
+.fetionImgList li{ border:1px solid #dcdcdc; border-top:none; border-left:none; width:250px; height:102px; float:left;}
+.fetionImgList li a{ display:block; width:160px; height:72px; padding:30px 0 0 90px; text-decoration:none; position:relative}
+.fetionImgList li a:hover{ background:url(../img/fetionPage.gif) no-repeat; text-decoration:none;}
+.fetionImgList li a:hover .textName{ color:#fe7002;}
+.fetionImgList .textName{ display:block; width:160px; height:28px; font:16px/28px "微软雅黑"; color:#333;}
+.fetionImgList .textDetail{ display:block; width:160px; height:15px; font:12px/15px "微软雅黑"; color:#999;}
+#lastPowerSpace{ margin:-10px 0 20px; }
+.w502{ width:502px;}
+.fetionIco{ display:block; width:60px; height:60px; position:absolute; left:20px; top:26px; background:url(../img/fetionIco.gif);}
+.item .itemIco1_1{ background-position:0 0;} 
+.item .itemIco1_2{ background-position:-62px 0;}
+.item .itemIco1_3{ background-position:-124px 0;} 
+.item .itemIco1_4{ background-position:-186px 0;}
+.item .itemIco2_1{ background-position:0 -62px;}
+.item .itemIco2_2{ background-position:-62px -62px;}
+.item .itemIco2_3{ background-position:-124px -62px;}
+.item .itemIco2_4{ background-position:-186px -62px;}
+.item .itemIco3_1{ background-position:0 -124px;}
+.item .itemIco3_2{ background-position:-62px -124px;}
+.item .itemIco3_3{ background-position:-124px -124px;}
+.item .itemIco3_4{ background-position:-186px -124px;}
+.item .itemIco3_5{ background-position:-248px -124px;}
+.item .itemIco3_6{ background-position:-310px -124px;}
+.item .itemIco3_7{ background-position:-372px -124px;}
+.item .itemIco3_8{ background-position:0 -186px;}
+.item .itemIco3_9{ background-position:-62px -186px;}
+.item .itemIco3_10{ background-position:-124px -186px;}
+.item .itemIco3_11{ background-position:-186px -186px;}
+.item .itemIco3_12{ background-position:-248px -186px;}
+.item .itemIco3_13{ background-position:-310px -186px;}
+.item .itemIco3_14{ background-position:-372px -186px;}
+.item .itemIco4_1{ background-position:0 -248px;} 
+.item .itemIco4_2{ background-position:-62px -248px;}
+.item .itemIco5_1{ background-position:0 -310px;} 
+.item .itemIco5_2{ background-position:-62px -310px;}
+.item .itemIco5_3{ background-position:-124px -310px;} 
+/* --飞信特权内容---------------------------------------------------------------------------- */
+
+/* --Banner---------------------------------------------------------------------------- */
+.fetionBanner{ width:960px; height:107px; position:relative;}
+.fetionBanner img{ width:960px; height:107px;}
+.fetionBanner a{ display:block; width:184px; height:43px; background-position:0 -131px; position:absolute; right:45px; top:33px;}
+.fetionBanner p{ font-size:14px; color:#814f44; position:absolute; left:246px; top:70px;}
+/* --Banner---------------------------------------------------------------------------- */
+
+/******飞信特权页面****************************************************************************/
+
+
+/******专享特权页面****************************************************************************/
+
+/* --专享特权Banner---------------------------------------------------------------------------- */
+.topBar{ height:172px; margin-top:8px;}
+.topBarBg{ background:url(../img/topBarBg.png) no-repeat;}
+.topBarL{ float:left; width:216px; height:171px; margin-bottom:1px;}
+.topBarL .openVip{ padding-top:18px; background-position:0 0;}
+.topBarL .openVipWrap{ background-position:-216px 0; background-repeat:repeat-y;}
+.topBarL .openVipCont{ padding-bottom:17px; background-position:-432px bottom;}
+.topBarL .openVipCont a{ display:block; width:136px; height:40px; margin:7px 40px 0;}
+.topBarL .openVipCont p{ height:36px; line-height:18px; padding:0 10px 0 20px; color:#666;}
+.topBarL .openVipCont dl{ line-height:18px; margin:17px 0 0 20px; color:#666;}
+.topBarL .openVipCont dt{ font-weight:bold;}
+.topBarL .openVipCont span{ color:#ff0000;}
+.topBarM{ float:left; width:512px; height:172px; margin:0 8px; position:relative; display:inline;}
+.topBarM img{ width:512px; height:172px;}
+.topBarM .mask{ width:512px; height:30px; background:#000; opacity:0.3; filter:alpha(opacity=30); position:absolute; left:0; bottom:0px;}
+/*.topBarM .message{ width:502px; height:28px; line-height:28px; padding:2px 0 0 10px; position:absolute; left:0; bottom:0px;}*/
+.topBarM .text{font-size:14px; font-weight:bold; color:#f2f1f1; position:absolute; left:10px; bottom:7px; }
+.topBarM .text:hover{ color:#ff4708;}
+.topBarM .dot{ width:120px; height:28px; line-height:28px; position:absolute; right:0; bottom:0;}
+.topBarM .dot a{ display:inline-block; width:10px; height:10px; margin-right:10px; border:2px solid #fff; border-radius:100%; overflow:hidden; vertical-align:middle;}
+.topBarM .dot a:hover,.dot a.active{ background-color:#fff;}
+.topBarM .dot i{ height:100%;display:inline-block; vertical-align:middle;}
+
+.topBarR{ float:right; width:216px; height:172px; }
+.topBarR .topBarRT{ height:32px; line-height:32px; font-size:14px; color:#666; text-indent:22px; background-position:-648px 0;}
+.topBarR .topBarRWrap{ background-position:-864px 0; background-repeat:repeat-y;}
+.topBarR .topBarRCont{ background-position:-1080px bottom; height:90px; padding:10px 0 40px; margin-right:-24px}
+.topBarRCont li{ float:left; width:96px; height:30px; line-height:30px; text-indent:31px; font-weight:bold; padding-right:24px; position:relative;}
+.topBarRCont li a{ color:#666;}
+.topBarRCont li a:hover{ color:#fe4708;}
+.topBarRCont .privilegeIco1{ background:url(../img/privilegeIco1.png) no-repeat; width:16px; height:18px; position:absolute; left:10px; top:5px;}
+.topBarRCont .ico1{ background-position:0 0;}
+.topBarRCont .ico2{ background-position:-20px 0;}
+.topBarRCont .ico3{ background-position:-40px 0;}
+.topBarRCont .ico4{ background-position:-60px 0;}
+.topBarRCont .ico5{ background-position:-80px 0;}
+.topBarRCont .ico6{ background-position:-100px 0;}
+/* --专享特权Banner---------------------------------------------------------------------------- */
+
+/* --专享特权Title和边框背景---------------------------------------------------------------------------- */
+.mt8{ margin-top:8px;}
+.privBor{ border:1px solid #d9d9d9; border-radius:1px;}
+.insetWrap{ border-left:1px solid #fff; border-right:1px solid #fff;}
+.privTitle{ background:url(../img/privTitle.gif) no-repeat;}
+.privBgTop{ background-position:0 -179px; background-repeat:repeat-x; width:956px; height:39px;}
+.privBgTop h2{ height:21px; width:83px; padding:10px 0 8px 10px;}
+.privBgTop h2 a{ display:inline-block; height:0;  padding-top:21px; overflow:hidden;}
+.title1{ width:83px; background-position:0 -42px;}
+.title2{ width:80px; background-position:0 -65px;}
+.title3{ width:63px; background-position:0 -88px;}
+.privBgBottom{ height:11px; overflow:hidden; background-position:0 -124px; background-repeat:repeat-x;}
+/* --专享特权Title和边框背景---------------------------------------------------------------------------- */
+
+/* --周边下载---------------------------------------------------------------------------- */
+.loadContent{ width:936px; height:239px; border-top:2px solid #d9d9d9; margin:0 10px; padding-top:20px;}
+.loadContentL{ float:left; width:722px; height:239px;}
+.loadContentL .com{ float:left; width:340px; padding-right:21px}
+.titleCom{ height:23px; line-height:23px; text-align:center; background:#efefef; border-radius:2px;}
+.titleCom a{ font-weight:bold; color:#333;}
+.titleCom a:hover{ color:#ff4708;}
+.headLoadT,.faceLoadT{ width:326px;}
+.wallpaperT{ width:214px}
+.com .list1{ padding-top:20px;}
+.com .list1 li{ float:left; width:170px; height:74px; padding-bottom:24px;}
+.com .list2 li{ float:left; width:170px; height:80px; padding-top:20px;}
+.com .list1 img{ float:left; width:74px; height:74px; margin-right:10px; display:inline;}
+.com .list2 img{ float:left; width:80px; height:80px; margin-right:10px; display:inline;}
+.com .detail{ float:left;}
+.com .detail p{ height:35px; line-height:35px; color:#333;}
+.com .list1 a{ display:block; width:35px; height:21px; background-position:0 -156px;}
+.com .list2 a{ display:block; width:71px; height:21px; background-position:-40px -156px;}
+
+.loadContentR{ float:right; width:214px;}
+.loadContentR li{ width:212px; height:78px; vertical-align:top; padding-top:20px; margin-right:2px;}
+.loadContentR li img{ float:left; width:102px; height:74px; margin-right:12px; display:inline;}
+.loadContentR .size{ float:left; width:98px; height:78px;}
+.loadContentR .size p{ height:16px; line-height:16px; color:#434343; padding-bottom:2px; overflow:hidden;}
+.loadContentR .size a{ display:block; width:96px; height:15px; line-height:15px; margin-bottom:3px; border:1px solid #ccc; text-align:center; color:#333; background-position:0 -109px;}
+.loadContentR .size a:hover{ color:#ff4708;}
+/* --周边下载---------------------------------------------------------------------------- */
+
+/* --星座运程---------------------------------------------------------------------------- */
+.lineCom{ width:713px; height:0; overflow:hidden; margin:0 0 0 10px; border-top:2px solid #d9d9d9;}
+.starcontent{ width:948px; margin-right:8px; position:relative;}
+.starcontentL{ float:left; width:723px; height:211px; padding:10px 31px 0 0;}
+.starshowBg{ background:url(../img/starshowBg.jpg) no-repeat 723px 0;}
+.tianXie{float:left; width:113px; color:#434343; text-align:center; padding-top:12px;}
+.tianXie img{ width:92px; height:92px; border:1px solid #e7e7e7;}
+.tianXie .nameTX{ line-height:20px; color:#cd1a09;}
+.tianXie .starDate{ line-height:20px; font-size:10px;}
+.tianXieCont{float:left; width:282px; color:#434343; font-weight:bold; padding-left:5px;}
+.tianXieCont li{ float:left; height:38px; line-height:38px;}
+.tianXieCont .text1{ width:158px; position:relative;}
+.tianXieCont .text2{ width:112px;}
+.tianXieCont .text1 .star{ width:70px; height:12px; line-height:12px; overflow:hidden; position:absolute; font-size:0; top:10px; right:24px;}
+.tianXieCont .text1 .star span{ display:inline-block; width:14px; height:12px; overflow:hidden;}
+.tianXieCont .text1 .star .star1{ background-position:-100px -44px;}
+.tianXieCont .text1 .star .star2{ background-position:-116px -44px;}
+.note{ float:left; width:150px; padding-top:5px; color:#434343}
+.note dt{ height:26px; line-height:26px; font-weight:bold;}
+.note dd{ line-height:25px;}
+.note a{ display:block; height:34px; line-height:34px; text-align:right; color:#015790;}
+.starList{ float:right; width:164px; padding-left-:9px;}
+.starList li{ float:left; width:43px; height:31px; line-height:31px; padding-left:25px; font-weight:bold; margin-left:14px; display:inline; position:relative;}
+.starList li a{ color:#333;}
+.starList li a:hover{ color:#ff4708;}
+.starList li span{ width:18px; height:19px; background:url(../img/starIco.gif) no-repeat; position:absolute; left:0; top:8px;}
+.starList .starIco1{ background-position:0 0;}
+.starList .starIco2{ background-position:-20px 0;}
+.starList .starIco3{ background-position:-40px 0;}
+.starList .starIco4{ background-position:-60px 0;}
+.starList .starIco5{ background-position:-80px 0;}
+.starList .starIco6{ background-position:-100px 0;}
+.starList .starIco7{ background-position:0 -20px;}
+.starList .starIco8{ background-position:-20px -20px;}
+.starList .starIco9{ background-position:-40px -20px;}
+.starList .starIco10{ background-position:-60px -20px;}
+.starList .starIco11{ background-position:-80px -20px;}
+.starList .starIco12{ background-position:-100px -20px;}
+.readBook{ float:right; width:194px; position:absolute; right:0; top:-21px;}
+.readBook .book{ padding:12px 22px 0 28px;}
+.readBook .book img{ margin:0 0 18px 22px; border:1px solid #e7e7e7; width:88px; height:108px;}
+.readBook .book .bookText{ line-height:15px; color:#434343;}
+/* --星座运程---------------------------------------------------------------------------- */
+
+/* --会员秀---------------------------------------------------------------------------- */
+.showcontent{ width:948px; margin-right:8px; position:relative;}
+.showcontentL{ float:left; width:723px; height:211px; padding:10px 31px 0 0; background-position: right top;}
+.showcontentL .showList{ padding-top:20px; margin-right:-32px;}
+.showcontentL .showList li{ float:left; width:106px; margin:0 34px 0 11px; display:inline;}
+.showcontentL .showList li img{ width:104px; height:158px; border:1px solid #dbdbdb;}
+.showcontentL .showList li a{ display:block; line-height:34px; text-align:center; color:#333;}
+.showcontentL .showList li a:hover{ color:#ff4708;}
+.VIPShow{ float:right; width:194px; position:absolute; right:0; top:-31px;}
+.VIPShow li{ height:26px; line-height:26px; padding:0 0 1px 26px; position:relative;}
+.VIPShow li a{ color:#333;}
+.VIPShow li a:hover{ color:#ff4708;}
+.VIPShow .showBor{ display:block; width:194px; height:1px; position:absolute; left:0; bottom:0; overflow:hidden; background-position:0 -153px; background-repeat:repeat-x;}
+.VIPShow .showNumb{ display:block; width:16px; height:16px; position:absolute; left:0; top:6px; overflow:hidden}
+.VIPShow .showNumb1{ background-position:0 -135px;}
+.VIPShow .showNumb2{ background-position:-21px -135px;}
+.VIPShow .showNumb3{ background-position:-42px -135px;}
+.VIPShow .showNumb4{ background-position:-63px -135px;}
+.VIPShow .showNumb5{ background-position:-84px -135px;}
+.VIPShow li.active{ height:86px; line-height:86px; padding:10px 0 11px 26px; position:relative;}
+.VIPShow li.active a{ display:inline-block;}
+.VIPShow li.active .showNumb{ display:block; width:16px; height:16px; position:absolute; left:0; top:47px; overflow:hidden}
+.VIPShow li.active img{ width:56px; height:84px; border:1px solid #ddd;}
+/* --会员秀---------------------------------------------------------------------------- */
+
+/******专享特权页面****************************************************************************/
+
+
+/******年费会员页面****************************************************************************/
+
+/* --附导航---------------------------------------------------------------------------- */
+.subNav{ height:32px; line-height:32px; color:#874387; padding-left:570px;}
+.subNav a{ padding:0 10px; color:#333;}
+.subNav a.active{ font-weight:bold; color:#cd1a09;}
+/* --附导航---------------------------------------------------------------------------- */
+
+/* --年费会员Banner---------------------------------------------------------------------------- */
+.yearBanner{ width:960px; height:286px; position:relative;}
+.yearBanner img{ width:960px; height:286px;}
+.yearBanner a{ display:block; width:184px; height:43px; background-position:0 -131px; position:absolute; left:223px; bottom:56px;}
+/* --年费会员Banner---------------------------------------------------------------------------- */
+
+/* --标题---------------------------------------------------------------------------- */
+.yearTitle{ height:74px; font:24px/74px "微软雅黑"; font-style:italic; color:#cd1a09; font-weight:normal;}
+/* --标题---------------------------------------------------------------------------- */
+
+/* --列表---------------------------------------------------------------------------- */
+.yearList{ border-top:1px solid #f2f2f2;}
+.yearList .line{ border-bottom:1px solid #f2f2f2;}
+.line li{ float:left; margin-right:15px; display:inline; width:202px; height:85px; padding:26px 1px 26px 102px; position:relative;}
+.yearList .line .textName{ height:31px; line-height:31px; font-size:14px; font-weight:bold; color:#434343;}
+.yearList .line .textDetail{ height:18px; line-height:18px; color:#666;}
+.line .cellBg{ background:url(../img/cellBg.jpg) no-repeat right; top;}
+.yearIco{ display:block; width:85px; height:85px; position:absolute; left:0; top:26px; background:url(../img/yearIco.jpg) no-repeat;}
+.line .yearIco1{ background-position:0 0;}
+.line .yearIco2{ background-position:-86px 0;}
+.line .yearIco3{ background-position:-172px 0;}
+.line .yearIco4{ background-position:0 -86px;}
+.line .yearIco5{ background-position:-86px -86px;}
+.line .yearIco6{ background-position:-172px -86px;}
+.line .yearIco7{ background-position:0 -172px;}
+.line .yearIco8{ background-position:-86px -172px;}
+.line .yearIco9{ background-position:-172px -172px;}
+/* --列表---------------------------------------------------------------------------- */
+
+/******年费会员页面****************************************************************************/

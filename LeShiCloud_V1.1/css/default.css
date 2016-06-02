@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* --------CSS样式重置-------- */
+/* body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, p, form, button, input, textarea, th, td {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", arial, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman";
+	color: #fff;
+} */
+body {
+    margin: 0;
+    color: #000;
+    font-size: 12px;
+    font-family: "微软雅黑", arial, sans-serif, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    overflow: hidden;
+}
+ul, ol, li, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, input, i, u, em, small, sub, sup, input, button, textarea, p, th, td, strong {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+img {
+	border: none;
+	vertical-align: top;
+}
+strong, em {
+	font-weight: normal;
+	font-style: normal;
+}
+.clearFix {
+	zoom: 1;
+}
+.clearFix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+html * {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	outline: none;
+}
+input {
+    outline: none;
+}
+input, button {
+	-webkit-appearance: none;
+}
+html {
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+/* --------CSS样式重置-------- */
